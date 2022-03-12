@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/im_photo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="430dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/night"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <View
+        android:id="@+id/panel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv_sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="Sunday, 19 May 2019  |  9:30PM"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/panel" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/rounded_pass"
+        android:backgroundTint="@color/color"
+        android:drawableEnd="@drawable/ic_location"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:text="Mumbai, India"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="@id/im_photo"
+        app:layout_constraintTop_toTopOf="@id/panel" />
+
+    <ImageView
+        android:id="@+id/im_vector"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/vector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_33"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.507" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="4.22dp"
+        android:layout_marginRight="285dp"
+        android:text="Cloudy"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/im_vector" />
+
+    <TextView
+        android:id="@+id/tv_33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="156dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginRight="156dp"
+        android:layout_marginBottom="288dp"
+        android:text="33"
+        android:textColor="@color/black"
+        android:textSize="70dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="°C"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_33"
+        app:layout_constraintTop_toTopOf="@id/tv_33" />
+
+    <TextView
+        android:id="@+id/tv_35"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/vector"
+        android:text="35°C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_33"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="68dp"
+        android:text="27°C"
+        app:layout_constraintLeft_toRightOf="@id/tv_33"
+        app:layout_constraintTop_toBottomOf="@id/tv_35" />
+
+
+    <ImageView
+        android:id="@+id/im_humidity"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/humidity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/im_barometer"
+        app:layout_constraintTop_toTopOf="@id/im_barometer" />
+
+
+    <TextView
+        android:id="@+id/tv_73"
+        android:layout_width="30dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:text="73%"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/im_humidity"
+        app:layout_constraintRight_toRightOf="@id/im_humidity"
+        app:layout_constraintTop_toBottomOf="@id/im_humidity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="285dp"
+        android:text="Humidity"
+        android:textSize="8dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_73" />
+
+
+    <ImageView
+        android:id="@+id/im_barometer"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginBottom="105dp"
+        android:src="@drawable/barometer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:text="1,009mBar"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/im_barometer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Pressure"
+        android:textSize="8dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_bar" />
+
+
+
+    <ImageView
+        android:id="@+id/im_wind"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginBottom="105dp"
+        android:src="@drawable/wind"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_11km"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:text="11 km/h"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/im_wind"
+        app:layout_constraintRight_toRightOf="@id/im_wind"
+        app:layout_constraintTop_toBottomOf="@id/im_wind" />
+
+
+    <TextView
+        android:layout_width="21dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="4dp"
+        android:text="Wind"
+        android:textSize="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_11km"
+        app:layout_constraintRight_toRightOf="@id/tv_11km"
+        app:layout_constraintTop_toBottomOf="@id/tv_11km" />
+
+
+    <ImageView
+        android:id="@+id/im_sunset"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/sunset"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/im_sunrise"
+        app:layout_constraintTop_toTopOf="@id/im_sunrise" />
+
+    <TextView
+        android:id="@+id/tv_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:text="6:03 AM"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/im_sunset"
+        app:layout_constraintRight_toRightOf="@id/im_sunset"
+        app:layout_constraintTop_toBottomOf="@id/im_sunset" />
+
+    <TextView
+        android:layout_width="21dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="4dp"
+        android:text="Sunrise"
+        android:textSize="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_pm"
+        app:layout_constraintRight_toRightOf="@id/tv_pm"
+        app:layout_constraintTop_toBottomOf="@id/tv_pm" />
+
+
+    <ImageView
+        android:id="@+id/im_sunrise"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="105dp"
+        android:src="@drawable/sunrise"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/im_barometer" />
+
+    <TextView
+        android:id="@+id/tv_sunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:text="7:05 PM"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/im_sunrise" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Sunset"
+        android:textSize="8dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sunrise" />
+
+
+    <ImageView
+        android:id="@+id/im_sand"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/sand"
+        app:layout_constraintLeft_toRightOf="@id/im_sunrise"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/im_sunrise" />
+
+    <TextView
+        android:id="@+id/tv_sand"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:text="13h 1m"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/im_sand"
+        app:layout_constraintRight_toRightOf="@id/im_sand"
+        app:layout_constraintTop_toBottomOf="@id/im_sand" />
+
+    <TextView
+        android:layout_width="21dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="4dp"
+        android:text="Daytime"
+        android:textSize="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_sand"
+        app:layout_constraintRight_toRightOf="@id/tv_sand"
+        app:layout_constraintTop_toBottomOf="@id/tv_sand" />
+
+
+    111
+
+    <View
+        android:id="@+id/rectangles2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginBottom="39dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/im_vector1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/vector"
+        app:layout_constraintLeft_toLeftOf="@id/rectangles2"
+        app:layout_constraintRight_toRightOf="@id/rectangles2"
+        app:layout_constraintTop_toTopOf="@id/rectangles2" />
+
+
+    <TextView
+        android:id="@+id/tv_vector1"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:text="Tue, 22"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/im_vector1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="35°C   27°C"
+        android:textSize="8dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_vector1" />
+
+
+    22
+
+
+    <View
+        android:id="@+id/rectangles"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/rectangle"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/rectangles2"
+        app:layout_constraintTop_toTopOf="@id/rectangles2" />
+
+    <ImageView
+        android:id="@+id/im_sunny"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/sunny"
+        app:layout_constraintLeft_toLeftOf="@id/rectangles"
+        app:layout_constraintRight_toRightOf="@id/rectangles"
+        app:layout_constraintTop_toTopOf="@id/rectangles2" />
+
+
+    <TextView
+        android:id="@+id/tv_sunny"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:text="Mon, 21"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/rectangles"
+        app:layout_constraintRight_toRightOf="@id/rectangles"
+        app:layout_constraintTop_toBottomOf="@id/im_sunny" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="35°C   26°C"
+        android:textSize="8dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/rectangles"
+        app:layout_constraintRight_toRightOf="@id/rectangles"
+        app:layout_constraintTop_toBottomOf="@id/tv_sunny" />
+
+
+    33
+
+    <View
+        android:id="@+id/rectangles3"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="45dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/rectangle"
+        app:layout_constraintLeft_toRightOf="@id/rectangles2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rectangles2" />
+
+    <ImageView
+        android:id="@+id/im_hazy"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/hazy"
+        app:layout_constraintLeft_toLeftOf="@id/rectangles3"
+        app:layout_constraintRight_toRightOf="@id/rectangles3"
+        app:layout_constraintTop_toTopOf="@id/rectangles3" />
+
+    <TextView
+        android:id="@+id/tv_hazy"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:text="Wed, 22"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/rectangles3"
+        app:layout_constraintRight_toRightOf="@id/rectangles3"
+        app:layout_constraintTop_toBottomOf="@id/im_hazy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="34°C   29°C"
+        android:textSize="8dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/rectangles3"
+        app:layout_constraintRight_toRightOf="@id/rectangles3"
+        app:layout_constraintTop_toBottomOf="@id/tv_hazy" />
+
+
+    444
+
+    <View
+        android:id="@+id/rectangles4"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintLeft_toRightOf="@id/rectangles2"
+        app:layout_constraintTop_toTopOf="@id/rectangles2"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
